@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Student Dashboard</h1>
+
+    <h2>
+        Welcome {{ student }}
+    </h2>
+
+    <p>
+        Exam Duration : 30 Minutes
+    </p>
+
+    <p>
+        Face Detection Enabled
+    </p>
+
+    <p>
+        Tab Switching Detection Enabled
+    </p>
+
+    <a href="/exam/">
+        <button>
+            Start Exam
+        </button>
+    </a>
+
+</div>
+
+</body>
+</html>

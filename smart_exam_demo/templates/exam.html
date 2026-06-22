@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Online Examination</title>
+
+    <link rel="stylesheet"
+          href="{% static 'css/style.css' %}">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Online Examination</h1>
+
+    <video
+        id="video"
+        width="600"
+        height="400"
+        autoplay>
+    </video>
+
+    <div id="warning"></div>
+
+    <hr>
+
+    <h2>Sample Questions</h2>
+
+    <p>
+        1. What is Artificial Intelligence?
+    </p>
+
+    <textarea rows="4"></textarea>
+
+    <p>
+        2. Explain Machine Learning.
+    </p>
+
+    <textarea rows="4"></textarea>
+
+    <br><br>
+
+    <button>
+        Submit Exam
+    </button>
+
+</div>
+
+<script src="{% static 'js/monitor.js' %}"></script>
+
+</body>
+</html>
